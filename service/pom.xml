@@ -11,7 +11,7 @@
     <groupId>com.suke</groupId>
     <artifactId>czx</artifactId>
     <version>0.0.1</version>
-    <name>x-springboot</name>
+    <name>service</name>
     <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
 
