@@ -6,6 +6,7 @@ import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
@@ -29,7 +30,7 @@ public class Swagger2 {
                 //控制暴露出去的路径下的实例
                 //如果某个接口不想暴露,可以使用以下注解
                 //这样,该接口就不会暴露在 swagger2 的页面下
-                .apis(RequestHandlerSelectors.basePackage("com.suke.czx.modules.app"))
+                .apis(RequestHandlerSelectors.basePackage("com.suke.czx.modules"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -38,8 +39,10 @@ public class Swagger2 {
         return new ApiInfoBuilder()
                 //页面标题
                 .title("X-SpringBoot API")
+                .description("swagger-bootstrap-ui")
+                .termsOfServiceUrl("http://localhost:8080/")
                 //创建人
-                .contact("czx")
+                .contact(new Contact("Ruffianjiang","https://github.com/Ruffianjiang","jiangyj0516@outlook.com"))
                 //版本号
                 .version("1.0")
                 //描述
