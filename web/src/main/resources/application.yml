@@ -1,2 +1,9 @@
 server:
   port: 18880
+
+
+
+spring:
+  web:
+    resources:
+      static-locations: classpath:public/
