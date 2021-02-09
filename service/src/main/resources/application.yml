@@ -13,7 +13,7 @@ spring:
     redis:
         host: localhost
         port: 6379
-        password:       # 密码（默认为空）
+        password: 123456       # 密码（默认为空）
     servlet:
         multipart:
             maxFileSize: 104857600 #100MB
@@ -41,3 +41,4 @@ mybatis-plus:
       # 默认数据库表下划线命名
       table-underline: true
 
+version: '@project.version@'

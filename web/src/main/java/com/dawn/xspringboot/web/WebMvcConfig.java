@@ -1,7 +1,8 @@
-//package com.suke.czx.config;
+//package com.dawn.xspringboot.web;
 //
 //import org.springframework.context.annotation.Configuration;
 //import org.springframework.web.servlet.config.annotation.CorsRegistry;
+//import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 //import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 //
 ///**
@@ -26,4 +27,10 @@
 //                .allowedMethods("GET", "POST", "DELETE", "PUT", "PATCH", "OPTIONS")
 //                .maxAge(3600 * 24);
 //    }
+//
+//    @Override
+//    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+//        registry.addResourceHandler("/public/**").addResourceLocations("classpath:/public/");
+//    }
+//
 //}
