@@ -75,7 +75,7 @@
         <mysql.version>8.0.16</mysql.version>
 
         <minio.version>6.0.2</minio.version>
-        <velocity.version>1.7</velocity.version>
+        <velocity.version>2.3</velocity.version>
         <swagger.version>2.9.2</swagger.version>
 
         <kaptcha.version>0.0.9</kaptcha.version>
@@ -151,6 +151,7 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.10.1</version>
                     <configuration>
                         <target>${java.version}</target>
                         <source>${java.version}</source>
@@ -160,6 +161,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.2.2</version>
                     <configuration>
                         <archive>
                             <addMavenDescriptor>false</addMavenDescriptor>
