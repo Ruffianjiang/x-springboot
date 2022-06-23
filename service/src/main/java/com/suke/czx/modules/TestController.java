@@ -3,9 +3,11 @@ package com.suke.czx.modules;
 import com.suke.czx.common.annotation.AuthIgnore;
 import com.suke.czx.common.annotation.LoginUser;
 import com.suke.czx.common.base.AbstractController;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@Slf4j
 @RestController
 @RequestMapping("/app")
 public class TestController extends AbstractController {
@@ -19,7 +21,8 @@ public class TestController extends AbstractController {
      **/
     @RequestMapping(value = "/getUserId")
     public String getUserId(@LoginUser String userId){
-        return "userId:" + userId;
+        log.debug("userId:" + userId);
+        return "uid";
     }
 
     /**
