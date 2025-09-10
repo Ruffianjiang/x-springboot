@@ -21,7 +21,7 @@
     "typescript": "^4.7.2",
     "unocss": "^66.1.0-beta.8",
     "unplugin-vue-components": "^0.25.0",
-    "vite": "^6.3.4",
+    "vite": "^6.3.6",
     "vite-ssg": "^26.1.1",
     "vue-tsc": "^0.34.16"
   },
