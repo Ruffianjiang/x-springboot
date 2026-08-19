@@ -1,0 +1,11 @@
+# x-springboot → 放到 .github/dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/webapp"   # 现有 PR 路径确认（Bump ... in /webapp）
+    schedule:
+      interval: "weekly"
+    groups:
+      all-dependencies:
+        patterns: ["*"]
+    open-pull-requests-limit: 10
